@@ -491,4 +491,7 @@
     .footer .shell{
       flex-direction:column;
     }
+      .brand img{
+    height:36px;
+  }
   }
