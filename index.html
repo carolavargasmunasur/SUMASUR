@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Misiones MUNASUR: participación, comunidad e impacto colectivo." />
+  <title>Misiones MUNASUR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav shell">
+      <div class="brand">MUNASUR</div>
+      <button class="button button--ghost" id="openSubmitTop">Cargar misión</button>
+    </nav>
+    <div class="hero__content shell">
+      <p class="eyebrow">TEMPORADA DE MISIONES</p>
+      <h1>Entre modelo y modelo, seguimos construyendo MUNASUR.</h1>
+      <p class="hero__lead">Cada acción acerca a alguien más, fortalece la comunidad y hace posible nuestro próximo modelo.</p>
+      <div class="hero__actions">
+        <button class="button" id="openSubmitHero">Subir evidencia</button>
+        <a class="button button--secondary" href="#ranking">Ver ranking</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section shell">
+      <div class="section__heading">
+        <div>
+          <p class="eyebrow">ESTA SEMANA</p>
+          <h2>Misiones activas</h2>
+        </div>
+        <p class="muted" id="lastUpdate">Cargando…</p>
+      </div>
+      <div class="cards" id="missions"></div>
+    </section>
+
+    <section class="section section--soft" id="ranking">
+      <div class="shell">
+        <div class="section__heading">
+          <div>
+            <p class="eyebrow">IMPACTO COLECTIVO</p>
+            <h2>Ranking comunitario</h2>
+          </div>
+          <p class="muted">Solo cuentan los envíos aprobados.</p>
+        </div>
+        <div class="ranking" id="rankingList"></div>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="impact-grid" id="stats"></div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="submitDialog">
+    <form class="modal__panel" id="submissionForm">
+      <button type="button" class="modal__close" id="closeDialog" aria-label="Cerrar">×</button>
+      <p class="eyebrow">CARGAR EVIDENCIA</p>
+      <h2>Completá tu misión</h2>
+      <p class="muted">Ingresá el mail con el que te registraste. La coordinación revisará el envío antes de sumar puntos.</p>
+
+      <label>Mail MUNASUR
+        <input type="email" name="email" id="email" required placeholder="nombre@munasur.org" />
+      </label>
+      <label>Misión
+        <select name="missionId" id="missionSelect" required></select>
+      </label>
+      <label>Contanos brevemente qué hiciste
+        <textarea name="comment" id="comment" rows="4" maxlength="600" required></textarea>
+      </label>
+      <label>Evidencia
+        <input type="file" name="evidence" id="evidence" accept="image/*,.pdf,video/mp4,video/quicktime" required />
+        <small>Máximo recomendado: 8 MB. Imagen, PDF o video corto.</small>
+      </label>
+      <label class="check"><input type="checkbox" required /> Confirmo que la evidencia corresponde a una acción real.</label>
+      <button class="button button--full" type="submit" id="submitButton">Enviar para revisión</button>
+      <p class="form-message" id="formMessage" role="status"></p>
+    </form>
+  </dialog>
+
+  <footer class="footer">
+    <div class="shell"><strong>MUNASUR</strong><span>La experiencia dura todo el año.</span></div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
