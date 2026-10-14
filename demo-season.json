@@ -1,0 +1,178 @@
+{
+  "season": {
+    "id": "EJEMPLO-01",
+    "title": "Más personas haciendo MUNASUR.",
+    "narrative": "Ejemplo de temporada: que más personas conozcan cómo ser voluntarias y que más instituciones se acerquen a nuestros modelos. Nos organizamos por equipos para conseguirlo.",
+    "start": "2026-11-09T09:00:00-03:00",
+    "end": "2026-11-21T18:00:00-03:00",
+    "status": "activa",
+    "target": 20,
+    "reward": "Una jornada entre voluntarios.",
+    "rewardDescription": "Recompensa de ejemplo: un encuentro de formación e intercambio para los voluntarios de MUNASUR. No es una actividad confirmada.",
+    "goalType": "puntos"
+  },
+  "teams": [
+    {
+      "code": "NORTE",
+      "name": "Equipo Norte · ejemplo"
+    },
+    {
+      "code": "SUR",
+      "name": "Equipo Sur · ejemplo"
+    },
+    {
+      "code": "ESTE",
+      "name": "Equipo Este · ejemplo"
+    }
+  ],
+  "missions": [
+    {
+      "id": "DEMO-1",
+      "title": "Invitá a alguien a ser parte.",
+      "description": "Contale a alguien qué hacemos como voluntarios de MUNASUR y conversá sobre cómo le gustaría participar.",
+      "minimumLevel": "medio",
+      "criterion": "Una persona que exprese interés real. Presentá evidencia de la conversación y su resultado.",
+      "start": "2026-11-10T09:00:00-03:00",
+      "end": "2026-11-16T20:00:00-03:00",
+      "teamCode": "",
+      "mode": "individual"
+    },
+    {
+      "id": "DEMO-2",
+      "title": "Acercá una institución a MUNASUR.",
+      "description": "Como equipo, busquen una institución con la que podamos construir un vínculo para nuestros modelos.",
+      "minimumLevel": "alto",
+      "criterion": "Un contacto institucional verificado y una conversación concreta, más allá de obtener un número.",
+      "start": "2026-11-10T09:00:00-03:00",
+      "end": "2026-11-16T20:00:00-03:00",
+      "teamCode": "",
+      "mode": "equipo"
+    },
+    {
+      "id": "DEMO-3",
+      "title": "Concreten una oportunidad para el modelo.",
+      "description": "Retomen el contacto con una institución y acuerden un aporte o una actividad concreta para MUNASUR.",
+      "minimumLevel": "superalto",
+      "criterion": "Una oportunidad concreta confirmada por la institución, con un próximo paso acordado.",
+      "start": "2026-11-10T09:00:00-03:00",
+      "end": "2026-11-16T20:00:00-03:00",
+      "teamCode": "",
+      "mode": "equipo"
+    }
+  ],
+  "impacts": [
+    {
+      "seasonId": "EJEMPLO-01",
+      "missionId": "DEMO-1",
+      "teamCode": "NORTE",
+      "date": "2026-11-11T12:00:00-03:00",
+      "status": "Aprobada",
+      "level": "medio",
+      "resultId": "EJEMPLO-0",
+      "id": "DEMO-ENV-1",
+      "personId": "norte1@example.org"
+    },
+    {
+      "seasonId": "EJEMPLO-01",
+      "missionId": "DEMO-1",
+      "teamCode": "SUR",
+      "date": "2026-11-11T12:00:00-03:00",
+      "status": "Aprobada",
+      "level": "medio",
+      "resultId": "EJEMPLO-1",
+      "id": "DEMO-ENV-2",
+      "personId": "sur1@example.org"
+    },
+    {
+      "seasonId": "EJEMPLO-01",
+      "missionId": "DEMO-1",
+      "teamCode": "ESTE",
+      "date": "2026-11-11T12:00:00-03:00",
+      "status": "Aprobada",
+      "level": "medio",
+      "resultId": "EJEMPLO-2",
+      "id": "DEMO-ENV-3",
+      "personId": "este1@example.org"
+    },
+    {
+      "seasonId": "EJEMPLO-01",
+      "missionId": "DEMO-2",
+      "teamCode": "ESTE",
+      "date": "2026-11-11T12:00:00-03:00",
+      "status": "Aprobada",
+      "level": "alto",
+      "resultId": "EJEMPLO-3",
+      "id": "DEMO-ENV-4",
+      "personId": "este1@example.org"
+    },
+    {
+      "seasonId": "EJEMPLO-01",
+      "missionId": "DEMO-2",
+      "teamCode": "SUR",
+      "date": "2026-11-11T12:00:00-03:00",
+      "status": "Pendiente",
+      "level": "",
+      "resultId": "EJEMPLO-4",
+      "id": "DEMO-ENV-5",
+      "personId": "sur1@example.org"
+    },
+    {
+      "seasonId": "EJEMPLO-01",
+      "missionId": "DEMO-1",
+      "teamCode": "NORTE",
+      "date": "2026-11-11T12:00:00-03:00",
+      "status": "Aprobada",
+      "level": "medio",
+      "resultId": "EJEMPLO-6",
+      "id": "DEMO-ENV-6",
+      "personId": "norte2@example.org"
+    }
+  ],
+  "members": [
+    {
+      "id": "norte1@example.org",
+      "teamCode": "NORTE"
+    },
+    {
+      "id": "norte2@example.org",
+      "teamCode": "NORTE"
+    },
+    {
+      "id": "sur1@example.org",
+      "teamCode": "SUR"
+    },
+    {
+      "id": "sur2@example.org",
+      "teamCode": "SUR"
+    },
+    {
+      "id": "este1@example.org",
+      "teamCode": "ESTE"
+    },
+    {
+      "id": "este2@example.org",
+      "teamCode": "ESTE"
+    }
+  ],
+  "goals": [
+    {
+      "id": "VINCULOS",
+      "label": "Contactos institucionales verificados",
+      "target": 2
+    },
+    {
+      "id": "OPORTUNIDAD",
+      "label": "Oportunidades concretas para MUNASUR",
+      "target": 1
+    }
+  ],
+  "results": [
+    {
+      "seasonId": "EJEMPLO-01",
+      "submissionId": "DEMO-ENV-4",
+      "id": "EJEMPLO-INSTITUCION-1",
+      "goalId": "VINCULOS",
+      "validated": true
+    }
+  ]
+}
